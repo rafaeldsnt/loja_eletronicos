@@ -6,4 +6,5 @@ app_name = 'estoque'
 urlpatterns = [
     path('', views.home, name='home'),
     path('produtos/listar/', views.ProdutoTabelaListView.as_view(), name='listprod'),
+    path('produtos/<int:pk>/', views.ProdutoDetailView.as_view(), name='detailprod'),
 ]

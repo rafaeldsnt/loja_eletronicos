@@ -18,3 +18,9 @@ class ProdutoTabelaListView(ListView):
     template_name = 'estoque/produto_tabela_list.html' 
     context_object_name = 'produtos'
     ordering = ['nome']
+
+class ProdutoDetailView(DetailView):
+    model = Produto
+    template_name = 'estoque/produto_tabela_detail.html'
+    context_object_name = 'produtos'
+    
