@@ -9,14 +9,15 @@
 {% block content %}
 
  <div class="row">
-  <div class="col-md-4">
-    <div class="col-md-4">
-        <table>
-          <tr>
-            <tb>Produto</td> <td>{{produtos.nome}}</td>
-          </tr>
-        </table>
-    </div>
+  <div class="col-md-6">
+    <ul>
+      <li> Produto : {{produtos.nome}}</li>
+      <li> Descrição : {{produtos.descricao}}</li>
+      <li> Preço : {{produtos.preco}}</li>
+      <li> Preço : {{produtos.estoque}}</li>
+      <img src="{{produtos.imagem.url}}"  class="img-fluid rounded" alt="{{produtos.nome}}">
+    
+    <ul>
   </div>
   
 

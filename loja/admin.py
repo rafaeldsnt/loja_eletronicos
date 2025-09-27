@@ -5,6 +5,3 @@ from .models import Perfil, Comentario
 admin.site.register(Perfil)
 
 admin.site.register(Comentario)
-
-
-#adminuser #12345678
